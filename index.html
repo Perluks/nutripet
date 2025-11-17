@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!-- Declaração de tipo de documento HTML5 - define que este é um documento HTML moderno -->
 <html lang="pt-br">
@@ -222,4 +223,230 @@
     <!-- Permite que o HTML/CSS carregue antes do JavaScript -->
     <script src="/nutripet/assets/js/script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<!-- Declaração de tipo de documento HTML5 - define que este é um documento HTML moderno -->
+<html lang="pt-br">
+<!-- Define o idioma da página como Português do Brasil para melhor SEO e acessibilidade -->
+
+<head>
+    <!-- Seção de metadados e configurações do documento -->
+    <!-- Tudo aqui não é exibido na página, mas configura como ela funciona -->
+    
+    <!-- Define o conjunto de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
+    <!-- Essencial para exibir corretamente: á, é, ç, etc. -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta tag viewport: torna o site responsivo em dispositivos móveis -->
+    <!-- initial-scale=1.0 garante que a página comece sem zoom -->
+    <!-- width=device-width faz o site adaptar à largura do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Descrição do site para motores de busca (SEO - Search Engine Optimization) -->
+    <!-- Aparece nos resultados do Google como resumo da página -->
+    <meta name="description" content="Nutri Pet - Especialistas em nutrição animal personalizada.">
+    
+    <!-- Título da página que aparece na aba do navegador -->
+    <!-- Também é usado pelos motores de busca para indexação -->
+    <title>NUTRI PET | Nutrição Animal</title>
+    
+    <!-- Pré-conecta ao Google Fonts para melhorar performance de carregamento -->
+    <!-- Reduz o tempo de latência ao carregar fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Importa a fonte Open Sans do Google Fonts em pesos 400 (normal) e 700 (bold) -->
+    <!-- display=swap garante que o texto apareça enquanto a fonte carrega -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Importa o arquivo CSS externo com todos os estilos da página -->
+    <!-- rel="stylesheet" indica que é uma folha de estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <!-- Elemento semanticamente correto para o topo da página -->
+    <header class="cabecalho">
+        <!-- Logo da marca com emoji para identidade visual -->
+        <!-- Classe "logo" é estilizada no CSS -->
+        <div class="logo">NUTRI PET 🐾</div>
+        
+        <!-- Navegação principal da página -->
+        <!-- Elemento semântico <nav> indica área de navegação -->
+        <nav>
+            <!-- Lista desordenada de links de navegação -->
+            <!-- Semanticamente correto usar <ul> para menus -->
+            <ul>
+                <!-- Links de navegação que levam às diferentes seções da página -->
+                <!-- href="#id" faz scroll suave até a seção com esse ID (com ajuda do JavaScript) -->
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                
+                <!-- Botão de Contato com estilo especial (diferente dos outros links) -->
+                <!-- Classe "btn-contato" faz este link parecer um botão -->
+                <li><a href="#contato" class="btn-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA -->
+    <!-- Elemento semântico <main> indica o conteúdo principal -->
+    <!-- Deve haver apenas um <main> por página -->
+    <main>
+        <!-- ================================================
+             SEÇÃO 1: HERO (Apresentação com destaque visual)
+             ================================================ -->
+        <!-- Hero section é a área principal acima da dobra -->
+        <!-- ID "inicio" permite linkagem direta desta seção -->
+        <section id="inicio" class="hero">
+            <!-- Conteúdo de texto da seção hero -->
+            <!-- Div para organizar e agrupar o texto -->
+            <div class="conteudo-hero">
+                <!-- Título principal (H1 - deve haver apenas um por página para SEO) -->
+                <!-- Este é o título mais importante da página -->
+                <h1>Saúde começa na tigela.</h1>
+                
+                <!-- Parágrafo descritivo do serviço -->
+                <!-- Complementa o H1 com informação adicional -->
+                <p>Planos nutricionais personalizados para cães e gatos.</p>
+                
+                <!-- Botão de chamada para ação (Call-To-Action) -->
+                <!-- ID "btn-saiba-mais" permite estilização específica e seleção no JavaScript -->
+                <!-- O JavaScript fará este botão levar ao contato com scroll suave -->
+                <button id="btn-saiba-mais">Agendar Avaliação</button>
+            </div>
+            
+            <!-- Imagem do cão (ilustração do serviço) -->
+            <!-- Classe "imagem-hero" permite estilização e responsividade específicas -->
+            <!-- alt text é crucial para acessibilidade e SEO -->
+            <!-- alt descreve a imagem para leitores de tela e quando a imagem não carrega -->
+            <img src="./assets/images/cão.png" alt="Cão saudável comendo ração nutritiva" class="imagem-hero">
+        </section>
+
+        <!-- ================================================
+             SEÇÃO 2: SOBRE (Informações sobre a empresa)
+             ================================================ -->
+        <!-- ID "sobre" permite linkagem direta desta seção via navegação -->
+        <section id="sobre" class="sobre">
+            <!-- Título H2 (nível 2, secundário à página) -->
+            <!-- Estrutura correta: H1 > H2 > H3, sem pular níveis -->
+            <h2>Sobre Nós</h2>
+            
+            <!-- Parágrafo com informações sobre a empresa -->
+            <!-- Texto claro e conciso sobre especialidade e foco -->
+            <p>Somos especialistas em nutrição animal personalizada, com foco em oferecer planos nutricionais adaptados às necessidades específicas do seu pet.</p>
+        </section>
+
+        <!-- ================================================
+             SEÇÃO 3: SERVIÇOS (Cards com ofertas de serviços)
+             ================================================ -->
+        <!-- ID "servicos" permite linkagem direta desta seção via navegação -->
+        <section id="servicos" class="servicos">
+            <!-- Título H2 desta seção -->
+            <h2>O que oferecemos</h2>
+            
+            <!-- Container de cards em grid responsivo -->
+            <!-- Classe "cards-container" usa CSS Grid para organizar responsivamente -->
+            <div class="cards-container">
+                
+                <!-- ========== CARD 1: Dietas Naturais ========== -->
+                <!-- Cada card representa um serviço oferecido -->
+                <!-- Classe "card" fornece estilização e efeitos hover -->
+                <div class="card">
+                    <!-- Título do serviço (H3 - nível 3) -->
+                    <h3>Dietas Naturais</h3>
+                    <!-- Descrição breve do serviço -->
+                    <p>Alimentação crua ou cozida, balanceada para o seu pet.</p>
+                </div>
+                
+                <!-- ========== CARD 2: Controlo de Peso ========== -->
+                <!-- Segundo card com outro serviço -->
+                <div class="card">
+                    <!-- Título do serviço -->
+                    <h3>Controlo de Peso</h3>
+                    <!-- Descrição breve do serviço -->
+                    <p>Programas para combater a obesidade animal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================
+             LINHA DIVISÓRIA
+             ================================================ -->
+        <!-- Separador visual entre seções de conteúdo -->
+        <hr class="divisor">
+
+        <!-- ================================================
+             SEÇÃO 4: EDUCACIONAL (Curiosidades sobre nutrição animal)
+             ================================================ -->
+        <!-- ID "educacional" permite linkagem direta desta seção -->
+        <section id="educacional" class="educacional">
+            <!-- Título H2 da seção educacional com emoji -->
+            <h2>Ciência Nutricional 🧬</h2>
+            
+            <!-- ========== ACCORDION 1: O que é Nutrição Animal ========== -->
+            <!-- Elemento <details> cria um accordion (sanfona) expansível -->
+            <!-- Permite ao usuário revelar/ocultar conteúdo com clique -->
+            <!-- Não requer JavaScript - é nativo do HTML5 -->
+            <details>
+                <!-- <summary> é o título clicável do accordion -->
+                <!-- Sempre visível; texto abaixo aparece ao clicar -->
+                <summary><strong>O que é exatamente Nutrição Animal?</strong></summary>
+                <!-- Parágrafo com resposta que aparece ao expandir o accordion -->
+                <p>É o conjunto de processos que transformam alimentos em tecidos corporais. Envolve ingestão, digestão, absorção e metabolismo.</p>
+            </details>
+
+            <!-- ========== ACCORDION 2: Ruminantes vs. Não-Ruminantes ========== -->
+            <!-- Segundo accordion com outra pergunta educacional -->
+            <details>
+                <!-- Summary com pergunta -->
+                <summary><strong>Ruminantes vs. Não-Ruminantes</strong></summary>
+                <!-- Explicação técnica sobre tipos de animais -->
+                <p>Animais como vacas e ovelhas são ruminantes: possuem uma câmara de fermentação cheia de bactérias benéficas. Já cães, gatos e aves são não-ruminantes e têm digestão mais direta.</p>
+            </details>
+
+            <!-- ========== ACCORDION 3: Por que contratar um nutricionista ========== -->
+            <!-- Terceiro accordion com informação sobre benefícios -->
+            <details>
+                <!-- Summary com pergunta de persuasão -->
+                <summary><strong>Por que contratar um nutricionista?</strong></summary>
+                <!-- Resposta convincente com dados de impacto -->
+                <p>A alimentação representa até 80% do custo de produção. O equilíbrio certo garante saúde, economia e desempenho máximo do animal.</p>
+            </details>
+        </section>
+
+        <!-- ================================================
+             SEÇÃO 5: CONTATO (Chamada para ação de contato)
+             ================================================ -->
+        <!-- ID "contato" permite linkagem direta desta seção -->
+        <!-- O botão "Agendar Avaliação" (hero) leva até aqui -->
+        <section id="contato" class="contato">
+            <!-- Título H2 desta seção -->
+            <h2>Contato</h2>
+            <!-- Mensagem de chamada para ação -->
+            <p>Entre em contato para agendar uma avaliação personalizada.</p>
+        </section>
+    </main>
+
+    <!-- ================================================
+         RODAPÉ DA PÁGINA
+         ================================================ -->
+    <!-- Elemento semântico <footer> para rodapé -->
+    <!-- Semanticamente correto para informações de rodapé -->
+    <footer>
+        <!-- Copyright e direitos autorais -->
+        <!-- &copy; é a entidade HTML para o símbolo © -->
+        <p>&copy; 2025 NUTRI PET. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- ================================================
+         IMPORTAÇÃO DO JAVASCRIPT
+         ================================================ -->
+    <!-- Script externo com lógica interativa da página -->
+    <!-- Colocado no final do <body> para melhor performance -->
+    <!-- Permite que o HTML/CSS carregue antes do JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+>>>>>>> 739708fef0f6e02a554d5d0af0fad954d5312a48
 </html>
