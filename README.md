@@ -78,5 +78,5 @@ Este projeto é de **uso livre com atribuição**. Você pode modificar e adapta
 
 ## Contato
 
-- 📧 Email: seu-email@exemplo.com
-- 🌐 Site: seu-site.com
+- 📧 Email: pedrolucs33@gmail.com
+- 🌐 Site: https://perluks.github.io/nutripet/
