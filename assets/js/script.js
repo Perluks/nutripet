@@ -85,7 +85,6 @@ if (btnAgendarAvaliacao) {
         this.style.transform = 'scale(1)';
     });
 }
-
 /* ======================================
    SEÇÃO 4: COMENTÁRIOS TÉCNICOS
    ====================================== */

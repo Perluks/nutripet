@@ -373,4 +373,5 @@ a:focus,
 button:focus,
 details summary:focus {
     outline: 2px solid var(--cor-primaria);
-    outline-offset: 2px;
+    outline-offset: 2px; 
+}
