@@ -54,42 +54,37 @@ links.forEach(link => {
 /* getElementById() é mais rápido que querySelector para buscar por ID */
 const btnAgendarAvaliacao = document.getElementById('btn-saiba-mais');
 
-/* Verifica se o botão existe na página (segurança) */
+/* Verifica se o botão existe na página (segurança contra erros) */
 if (btnAgendarAvaliacao) {
-    /* Adiciona event listener para o clique */
+    /* Escuta o clique no botão */
     btnAgendarAvaliacao.addEventListener('click', function() {
-        /* Seleciona a seção de contato pelo ID */
         const contatoSection = document.getElementById('contato');
-        
-        /* Se a seção existe, faz scroll suave até ela */
         if (contatoSection) {
-            /* scrollIntoView com smooth behavior leva até a seção suavemente */
             contatoSection.scrollIntoView({ behavior: 'smooth' });
         }
     });
+
+    /* ======================================
+       SEÇÃO 3: EFEITO VISUAL AO CLICAR
+       ====================================== */
+
+    /**
+     * Adiciona efeito visual de "press" ao clicar no botão
+     * O botão fica com efeito de estar sendo pressionado
+     */
+
+    /* Escuta quando o mouse pressiona no botão */
+    btnAgendarAvaliacao.addEventListener('mousedown', function() {
+        /* Reduz o botão para 98% do tamanho (efeito de pressão) */
+        this.style.transform = 'scale(0.98)';
+    });
+
+    /* Escuta quando o mouse solta depois do click */
+    btnAgendarAvaliacao.addEventListener('mouseup', function() {
+        /* Volta ao tamanho normal (100%) */
+        this.style.transform = 'scale(1)';
+    });
 }
-
-/* ======================================
-   SEÇÃO 3: EFEITO VISUAL AO CLICAR
-   ====================================== */
-
-/**
- * Adiciona efeito visual de "press" ao clicar no botão
- * O botão fica com efeito de estar sendo pressionado
- */
-
-/* Escuta quando o mouse pressiona no botão */
-btnAgendarAvaliacao.addEventListener('mousedown', function() {
-    /* Adiciona classe 'ativo' que tem estilos CSS diferentes */
-    /* A classe 'ativo' não está em style.css mas poderia estar */
-    this.style.transform = 'scale(0.98)'; // Diminui 2% o tamanho
-});
-
-/* Escuta quando o mouse solta depois do click */
-btnAgendarAvaliacao.addEventListener('mouseup', function() {
-    /* Remove o efeito de press voltando ao tamanho normal */
-    this.style.transform = 'scale(1)'; // Volta ao tamanho 100%
-});
 
 /* ======================================
    SEÇÃO 4: COMENTÁRIOS TÉCNICOS

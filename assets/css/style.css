@@ -62,30 +62,27 @@ body {
 
 /* Lista de navegação */
 nav ul {
-    list-style: none;               /* Remove bullets de lista */
-    display: flex;                  /* Coloca items em linha */
-    gap: 20px;                      /* Espaço entre items */
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Links de navegação */
 nav a {
-    text-decoration: none;          /* Remove sublinhado */
-    color: var(--cor-texto);        /* Cor cinzenta */
-    font-weight: bold;              /* Texto em negrito */
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: bold;
 }
 
-/* Botão de Contato na navegação */
 .btn-contacto {
-    background-color: var(--cor-primaria);  /* Fundo verde */
-    color: var(--branco);                    /* Texto branco */
-    padding: 8px 15px;                      /* Espaço interno */
-    border-radius: 5px;                     /* Cantos arredondados */
-    transition: 0.3s;                       /* Animação suave ao mudar */
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* Efeito hover do botão de contato */
 .btn-contacto:hover {
-    background-color: var(--cor-secundaria); /* Muda para verde mais escuro */
+    background-color: var(--cor-secundaria);
 }
 
 /* ======================================
@@ -103,52 +100,46 @@ nav a {
     min-height: 500px;                      /* Altura mínima */
 }
 
-/* Conteúdo de texto da seção hero */
 .conteudo-hero {
-    flex: 1;                /* Ocupa metade do espaço */
-    text-align: left;       /* Texto alinhado à esquerda */
+    flex: 1;
+    text-align: left;
 }
 
-/* Título principal da seção hero */
 .conteudo-hero h1 {
-    font-size: 3rem;                    /* Tamanho grande para destaque */
-    margin-bottom: 1rem;                /* Espaço abaixo */
-    color: var(--cor-primaria);         /* Verde primário */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
 }
 
-/* Parágrafo descritivo da seção hero */
 .conteudo-hero p {
-    font-size: 1.2rem;                  /* Tamanho grande */
-    margin-bottom: 2rem;                /* Espaço abaixo */
-    color: var(--cor-texto);            /* Cor de texto */
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--cor-texto);
 }
 
-/* Imagem do cão na seção hero */
 .imagem-hero {
-    flex: 1;                            /* Ocupa metade do espaço */
-    max-width: 400px;                   /* Largura máxima */
-    width: 100%;                        /* Responsiva */
-    border-radius: 10px;                /* Cantos arredondados */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para profundidade */
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Botão "Agendar Avaliação" */
 #btn-saiba-mais {
-    padding: 1rem 2rem;                     /* Espaço interno grande */
-    font-size: 1.2rem;                      /* Texto grande */
-    background-color: var(--cor-primaria);  /* Fundo verde */
-    color: var(--branco);                   /* Texto branco */
-    border: none;                           /* Sem borda */
-    border-radius: 5px;                     /* Cantos arredondados */
-    cursor: pointer;                        /* Cursor de mão ao hover */
-    transition: all 0.3s ease;              /* Animação suave */
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Efeito hover do botão */
 #btn-saiba-mais:hover {
-    background-color: var(--cor-secundaria);            /* Muda cor */
-    transform: scale(1.05);                             /* Aumenta ligeiramente */
-    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);    /* Sombra verde */
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
 }
 
 /* ======================================
@@ -156,23 +147,23 @@ nav a {
    ====================================== */
 
 .sobre {
-    padding: 4rem 5%;                           /* Espaço interno */
-    background-color: var(--branco);            /* Fundo branco */
-    text-align: center;                         /* Texto centrado */
-    border-bottom: 2px solid var(--cor-primaria); /* Linha verde abaixo */
+    padding: 4rem 5%;
+    background-color: var(--branco);
+    text-align: center;
+    border-bottom: 2px solid var(--cor-primaria);
 }
 
 .sobre h2 {
-    font-size: 2.5rem;              /* Tamanho grande */
-    color: var(--cor-primaria);     /* Verde primário */
-    margin-bottom: 1.5rem;          /* Espaço abaixo */
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
 }
 
 .sobre p {
-    font-size: 1.1rem;              /* Tamanho aumentado */
-    max-width: 600px;               /* Largura máxima para legibilidade */
-    margin: 0 auto;                 /* Centraliza o parágrafo */
-    line-height: 1.8;               /* Espaçamento maior entre linhas */
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 /* ======================================
@@ -180,15 +171,15 @@ nav a {
    ====================================== */
 
 .servicos {
-    padding: 4rem 5%;                   /* Espaço interno */
-    background-color: var(--cor-fundo); /* Fundo cinzento */
+    padding: 4rem 5%;
+    background-color: var(--cor-fundo);
 }
 
 .servicos h2 {
-    font-size: 2.5rem;              /* Tamanho grande */
-    color: var(--cor-primaria);     /* Verde primário */
-    text-align: center;             /* Centrado */
-    margin-bottom: 3rem;            /* Espaço abaixo */
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 /* Container de cards em grid responsivo */
@@ -200,34 +191,30 @@ nav a {
     margin: 0 auto;                             /* Centraliza */
 }
 
-/* Estilo individual de cada card */
 .card {
-    background-color: var(--branco);            /* Fundo branco */
-    padding: 2rem;                              /* Espaço interno */
-    border-radius: 10px;                        /* Cantos arredondados */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);     /* Sombra sutil */
-    transition: all 0.3s ease;                  /* Animação suave */
-    text-align: center;                         /* Texto centrado */
+    background-color: var(--branco);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
-/* Efeito hover do card - levanta com sombra */
 .card:hover {
-    transform: translateY(-10px);               /* Move para cima */
-    box-shadow: 0 6px 15px rgba(46, 204, 113, 0.2); /* Sombra verde maior */
-    border-top: 4px solid var(--cor-primaria); /* Linha verde no topo */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(46, 204, 113, 0.2);
+    border-top: 4px solid var(--cor-primaria);
 }
 
-/* Título dentro do card */
 .card h3 {
-    color: var(--cor-primaria);     /* Verde primário */
-    font-size: 1.5rem;              /* Tamanho grande */
-    margin-bottom: 1rem;            /* Espaço abaixo */
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-/* Texto descritivo dentro do card */
 .card p {
-    color: var(--cor-texto);        /* Cor de texto */
-    line-height: 1.6;               /* Espaçamento entre linhas */
+    color: var(--cor-texto);
+    line-height: 1.6;
 }
 
 /* ======================================
@@ -235,75 +222,69 @@ nav a {
    ====================================== */
 
 .educacional {
-    padding: 3rem 2rem;                 /* Espaço interno */
-    background: var(--cor-fundo);       /* Fundo cinzento */
-    max-width: 800px;                   /* Largura máxima */
-    margin: 2rem auto;                  /* Centrada com espaço */
-    border-radius: 10px;                /* Cantos arredondados */
+    padding: 3rem 2rem;
+    background: var(--cor-fundo);
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 10px;
 }
 
 .educacional h2 {
-    text-align: center;                 /* Centrado */
-    margin-bottom: 2rem;                /* Espaço abaixo */
-    color: var(--cor-primaria);         /* Verde primário */
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--cor-primaria);
 }
 
-/* Container de details (accordion) */
 .educacional details {
-    margin-bottom: 1rem;                    /* Espaço abaixo */
-    padding: 1rem;                          /* Espaço interno */
-    background: var(--branco);              /* Fundo branco */
-    border-left: 4px solid var(--cor-primaria); /* Linha verde na esquerda */
-    border-radius: 5px;                     /* Cantos arredondados */
-    cursor: pointer;                        /* Cursor de mão */
-    transition: all 0.3s ease;              /* Animação suave */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--branco);
+    border-left: 4px solid var(--cor-primaria);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Quando o details está aberto [open] - aplica sombra */
 .educacional details[open] {
-    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.15); /* Sombra verde sutil */
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.15);
 }
 
-/* Títulos dos details (summary) */
 .educacional details summary {
-    color: var(--cor-primaria);         /* Verde primário */
-    font-weight: bold;                   /* Negrito */
-    transition: all 0.3s ease;           /* Animação suave */
-    outline: none;                       /* Remove outline padrão */
+    color: var(--cor-primaria);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    outline: none;
 }
 
-/* Efeito hover do summary - muda cor e move para direita */
 .educacional details summary:hover {
-    color: var(--cor-secundaria);        /* Verde mais escuro */
-    transform: translateX(5px);          /* Move 5px para direita */
+    color: var(--cor-secundaria);
+    transform: translateX(5px);
 }
 
-/* Focus state para acessibilidade (keyboard) */
 .educacional details summary:focus {
-    outline: 2px solid var(--cor-primaria);  /* Linha verde */
-    outline-offset: 2px;                     /* Espaço da linha */
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 2px;
 }
 
-/* Parágrafo dentro dos details */
 .educacional details p {
-    margin-top: 1rem;               /* Espaço acima */
-    color: var(--cor-texto);        /* Cor de texto */
-    line-height: 1.6;               /* Espaçamento entre linhas */
+    margin-top: 1rem;
+    color: var(--cor-texto);
+    line-height: 1.6;
 }
 
 /* Media query para mobile - seção educacional */
 @media (max-width: 768px) {
     .educacional {
-        padding: 2rem 1rem;             /* Espaço reduzido */
-        margin: 1rem 5%;                /* Margem responsiva */
+        padding: 2rem 1rem;
+        margin: 1rem 5%;
     }
 
     .educacional h2 {
-        font-size: 1.8rem;              /* Fonte reduzida */
+        font-size: 1.8rem;
     }
 
     .educacional details {
-        padding: 0.8rem;                /* Espaço interno reduzido */
+        padding: 0.8rem;
     }
 }
 
@@ -312,21 +293,21 @@ nav a {
    ====================================== */
 
 .contato {
-    padding: 4rem 5%;                           /* Espaço interno */
-    background-color: var(--branco);            /* Fundo branco */
-    text-align: center;                         /* Texto centrado */
-    border-top: 2px solid var(--cor-primaria); /* Linha verde acima */
+    padding: 4rem 5%;
+    background-color: var(--branco);
+    text-align: center;
+    border-top: 2px solid var(--cor-primaria);
 }
 
 .contato h2 {
-    font-size: 2.5rem;              /* Tamanho grande */
-    color: var(--cor-primaria);     /* Verde primário */
-    margin-bottom: 1.5rem;          /* Espaço abaixo */
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
 }
 
 .contato p {
-    font-size: 1.1rem;              /* Tamanho aumentado */
-    margin-bottom: 2rem;            /* Espaço abaixo */
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 /* ======================================
@@ -334,59 +315,51 @@ nav a {
    ====================================== */
 
 footer {
-    background-color: #333;         /* Fundo cinzento escuro */
-    color: var(--branco);           /* Texto branco */
-    text-align: center;             /* Centrado */
-    padding: 2rem;                  /* Espaço interno */
-    font-size: 0.9rem;              /* Fonte pequena */
+    background-color: #333;
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
 }
 
 /* ======================================
    RESPONSIVIDADE - MOBILE
    ====================================== */
 
-/* Media query para telas menores que 768px */
 @media (max-width: 768px) {
-    /* Hero section em coluna (texto acima, imagem abaixo) */
     .hero {
-        flex-direction: column;         /* Muda para vertical */
-        padding: 2rem 5%;               /* Espaço reduzido */
-        min-height: auto;               /* Altura automática */
+        flex-direction: column;
+        padding: 2rem 5%;
+        min-height: auto;
     }
 
-    /* Título reduzido em mobile */
     .conteudo-hero h1 {
-        font-size: 2rem;                /* Reduz de 3rem para 2rem */
+        font-size: 2rem;
     }
 
-    /* Parágrafo reduzido em mobile */
     .conteudo-hero p {
-        font-size: 1rem;                /* Reduz de 1.2rem para 1rem */
+        font-size: 1rem;
     }
 
-    /* Navegação quebra em múltiplas linhas se necessário */
     nav ul {
-        flex-wrap: wrap;                /* Permite quebra de linha */
-        gap: 10px;                      /* Espaço reduzido */
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
-    /* Cabeçalho em coluna em mobile */
     .cabecalho {
-        flex-direction: column;         /* Vertical */
-        gap: 1rem;                      /* Espaço entre logo e nav */
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    /* Títulos das seções reduzidos */
     .servicos h2,
     .sobre h2,
     .contato h2 {
-        font-size: 1.8rem;              /* Reduz de 2.5rem para 1.8rem */
+        font-size: 1.8rem;
     }
 
-    /* Botão reduzido em mobile */
     #btn-saiba-mais {
-        padding: 0.8rem 1.5rem;         /* Espaço interno reduzido */
-        font-size: 1rem;                /* Fonte reduzida */
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -399,6 +372,5 @@ footer {
 a:focus,
 button:focus,
 details summary:focus {
-    outline: 2px solid var(--cor-primaria);  /* Linha verde ao receber foco */
-    outline-offset: 2px;                     /* Espaço da linha */
-}
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 2px;
