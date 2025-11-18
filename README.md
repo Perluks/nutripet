@@ -21,18 +21,6 @@
 - Negócios de nutrição animal
 - Profissionais que desejam presença online
 
-## Estrutura do Projeto
-NUTRIPET/
-├── index.html # Página principal
-├── README.md # Documentação
-├── assets/
-│ ├── css/
-│ │ └── style.css # Estilos CSS
-│ ├── images/
-│ │ └── cão.png # Imagem do cão
-│ └── js/
-│ └── script.js # JavaScript para interatividade
-
 ## Paleta de Cores
 
 - **Verde Saúde**: `#2ecc71`
