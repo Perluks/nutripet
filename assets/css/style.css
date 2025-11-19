@@ -272,6 +272,18 @@ nav a {
     line-height: 1.6;
 }
 
+/* Estilo da imagem na seção educacional */
+.imagem-educacional {
+    max-width: 100%;
+    width: 450px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Media query para mobile - seção educacional */
 @media (max-width: 768px) {
     .educacional {
